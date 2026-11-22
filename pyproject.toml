@@ -1,0 +1,18 @@
+[project]
+name = "qwen-vl-med"
+version = "0.1.0"
+description = "Bone tumour / fracture VQA with Qwen3-VL-8B + LoRA"
+requires-python = ">=3.10"
+
+[project.scripts]
+qwen-vl-med = "qwen_vl_med.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

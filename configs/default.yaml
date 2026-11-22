@@ -1,0 +1,9 @@
+model_id: Qwen/Qwen3-VL-8B-Instruct
+max_visual_tokens: 1280
+train_file: data/vqa/vqa_train.jsonl
+output_dir: outputs/qwen-vl-med-lora
+lora: {r: 16, dropout: 0.05}
+lr: 1.0e-4
+epochs: 2
+grad_accum: 16
+seed: 0
