@@ -48,10 +48,3 @@ Run tests: `pytest`.
 {"answer": "malignant", "boxes": [[210, 340, 560, 720]], "finding": "", "status": "answered"}
 ```
 Boxes use Qwen3-VL's normalised `[0, 1000]` coordinates.
-
-## Known TODOs
-- Verify BTXRD / FracAtlas column names in `data.py` against your download.
-- Replace exact-hash grouping with embedding-based near-duplicate grouping.
-- Fit temperature and τ on the validation split (`reliability.py`), then pass `--temperature/--tau`.
-- Add baselines (zero-shot Qwen3-VL, MedGemma, Lingshu) and ablations.
-- Check dataset licences before redistributing derived data.
